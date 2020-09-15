@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterInsuranceActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ثبت نام بیمه" />
+
+            <EditText
+                android:id="@+id/newinsuranceFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="نام"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+
+            <EditText
+                android:id="@+id/newinsuranceEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="ایمیل "
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newinsurancePhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="شماره تلفن"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/newinsuranceAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="آدرس"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newinsuranceUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newinsurancePassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newinsuranceConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter your password again."
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+
+            <CheckBox
+                android:id="@+id/insuranceprivacyagreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="شرایط و ضوابط ثبت نام در این برنامه را می دانم و می پذریم" />
+
+            <Button
+                android:id="@+id/registerinsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_bt_bg"
+                android:text="ثبت نام" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

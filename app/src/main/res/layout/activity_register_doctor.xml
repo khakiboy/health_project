@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterDoctorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ثبت نام دکتر" />
+
+            <EditText
+                android:id="@+id/newDrFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="نام"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newDrLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="نام خانوادگی"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newDrTakhasos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="تخصص"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <Spinner
+                android:id="@+id/inputDrGender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input" />
+
+            <Button
+                android:id="@+id/inputDrBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:padding="5dp"
+                android:text="انتخاب تاریخ تولد" />
+
+            <EditText
+                android:id="@+id/newDrEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="ایمیل "
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newDrPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="شماره تلفن"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/newDrAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="آدرس"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newDrUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newDrPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newDrConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter your password again."
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اطلاعات مطب:" />
+
+            <EditText
+                android:id="@+id/newDrOfficePhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="شماره تلفن"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/newDrOfficeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="آدرس"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ساعت کاری:" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/endTimehozoori"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input"
+                    android:text="پایان حضوری"
+                    android:onClick="setEndTimeHozoori">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/startTimeHozoori"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input"
+                    android:text="شروع حضوری"
+                    android:onClick="setStartTimeHozoori">
+
+                </Button>
+
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/timePerVisitHozoori"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="زمان هر ویزیت حضوری(به دقیقه)"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAlignment="viewEnd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/endTimeGheirHozoori"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input"
+                    android:text="پایان غیرحضوری"
+                    android:onClick="setEndTimeGheirHozoori">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/startTimeGheirHozoori"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input"
+                    android:text="شروع غیرحضوری"
+                    android:onClick="setStartTimeGheirHozoori">
+
+                </Button>
+
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/timePerVisitGheirHozoori"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="زمان هر ویزیت غیرحضوری(به دقیقه)"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textAlignment="viewEnd" />
+
+
+
+
+
+
+            <CheckBox
+                android:id="@+id/privacyagreementDr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="شرایط و ضوابط ثبت نام در این برنامه را می دانم و می پذریم" />
+
+            <Button
+                android:id="@+id/registerDr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_bt_bg"
+                android:text="ثبت نام" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPharmecyActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ثبت نام داروخانه" />
+
+            <EditText
+                android:id="@+id/newpharmecyFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="نام"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+
+            <EditText
+                android:id="@+id/newpharmecyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="ایمیل "
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newpharmecyPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="شماره تلفن"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/newpharmecyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="آدرس"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newpharmecyUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newpharmecyPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/newpharmecyConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter your password again."
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+
+            <CheckBox
+                android:id="@+id/pharmecyprivacyagreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="شرایط و ضوابط ثبت نام در این برنامه را می دانم و می پذریم" />
+
+            <Button
+                android:id="@+id/registerpharmecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_bt_bg"
+                android:text="ثبت نام" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitRequestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نوبت دکتر" />
+
+            <Spinner
+                android:id="@+id/inputdr"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input" />
+
+            <EditText
+                android:id="@+id/inputalaem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="علائم بیماری"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="right|top"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/inputhassasiatha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:minLines="3"
+                android:gravity="right|top"
+                android:hint="حساسیت ها"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+            <Button
+                android:id="@+id/inputVisitDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:padding="5dp"
+                android:text="انتخاب تاریخ" />
+
+            <Spinner
+                android:id="@+id/inputrequestType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input" />
+
+            <Spinner
+                android:id="@+id/inputVisitTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input"
+                android:visibility="invisible" />
+            <Button
+                android:id="@+id/submitVisitRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_bt_bg"
+                android:text="ثبت درخواست نوبت" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
